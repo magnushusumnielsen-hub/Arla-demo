@@ -36,7 +36,7 @@ export default function InputScreen({ onSubmit }: Props) {
               rows={10}
               value={value}
               onChange={e => setValue(e.target.value)}
-              placeholder="Fortæl mig om dit arbejde. Hvad er din rolle? Hvilke opgaver bruger du mest tid på? Hvad er mest frustrerende eller gentagende? Jo mere specifik, jo bedre."
+              placeholder="Fortæl mig om dit arbejde. Hvad er din rolle? Hvilke opgaver bruger du mest tid på? Hvad er mest frustrerende eller gentagne? Jo mere specifik, jo bedre."
               className="w-full rounded-lg border border-neutral-200 p-4 text-sm text-neutral-900 placeholder:text-neutral-500 focus:outline-none focus:ring-1 focus:ring-arla-green-dark resize-none bg-white"
             />
             <div className="flex gap-3 mt-4">

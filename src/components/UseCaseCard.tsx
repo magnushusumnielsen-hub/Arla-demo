@@ -25,10 +25,10 @@ export default function UseCaseCard({ useCase }: Props) {
             ? 'bg-arla-green-soft text-arla-green-dark'
             : 'bg-neutral-200 text-neutral-700'
         }`}>
-          {useCase.impact === 'high' ? 'Høj effekt' : 'Middel effekt'}
+          {useCase.impact === 'high' ? 'Høj effekt' : 'Medium effekt'}
         </span>
         <span className="text-xs font-medium px-2 py-0.5 rounded-md bg-neutral-200 text-neutral-700">
-          {useCase.effort}
+          {useCase.effort === '~2 hours' ? '~2 timer' : useCase.effort === '~1 day' ? '~1 dag' : useCase.effort}
         </span>
       </div>
       <h3 className="text-base font-medium text-neutral-900 mb-2">{useCase.title}</h3>

@@ -20,7 +20,7 @@ export default function ResultsScreen({ result, userDescription, onReset }: Prop
           </p>
           <h2 className="text-xl font-medium text-neutral-900 mb-2">{result.role_summary}</h2>
           <p className="text-sm text-neutral-700 mb-10">
-            Baseret på det du beskrev, er her hvad jeg ville prøve først.
+            Her er hvad jeg ville prøve først, baseret på det du fortalte mig.
           </p>
 
           <p className="text-xs font-medium tracking-widest text-arla-green-dark uppercase mb-4">

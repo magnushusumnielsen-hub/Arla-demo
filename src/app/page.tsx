@@ -29,7 +29,7 @@ export default function Home() {
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.error || 'Noget gik galt. Prøv igen.');
+        setError(data.error ?? 'Noget gik galt. Prøv igen.');
         setAppState('idle');
         return;
       }
