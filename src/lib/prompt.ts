@@ -26,6 +26,14 @@ Du SKAL returnere JSON i dette præcise format:
       "task": "Specifik opgave eller domæne, hvor GenAI er det forkerte værktøj",
       "reason": "Konkret forklaring: hallucinationsrisiko, manglende realtidsdata, regulatorisk eksponering osv. Vær specifik, ikke generisk."
     }
+  ],
+  "recommended_resources": [
+    {
+      "type": "video" | "guide",
+      "title": "Realistisk titel på en intern læringsvideo eller guide, f.eks. 'Kom i gang med Copilot i Outlook'",
+      "description": "1 sætning om hvad ressourcen dækker og hvorfor den er relevant for denne bruger.",
+      "duration": "Kun til videoer — f.eks. '8 min'. Udelad feltet for guides."
+    }
   ]
 }
 
@@ -33,6 +41,7 @@ Regler:
 - 2-3 elementer i high_impact_low_effort
 - 1-3 elementer i worth_exploring
 - MINDST 2 elementer i wont_help. Dette er obligatorisk. Springer du dette afsnit over, er dit output ufuldstændigt og ubrugeligt.
+- 2-3 elementer i recommended_resources. Tilpas dem til brugerens konkrete rolle og opgaver — ingen generiske "intro til AI"-ressourcer. Tænk på hvad en intern vidensbank hos en stor virksomhed realistisk ville indeholde: korte how-to-videoer, step-by-step guides til specifikke værktøjer (Copilot, ChatGPT, Teams), og rollespecifikke eksempler.
 - Kan du ikke navngive den specifikke opgave eller output for et forslag, så spring det over. Ingen vagt fyld.
 - Foreslå ikke at bygge tilpasset software, træne modeller eller noget der kræver IT-involvering. Værktøjer brugeren kan prøve i dag, i browseren, uden hjælp.
 - Startprompts skal lære ved eksempel: klare instruktioner, navngivne pladsholdere, eksplicit outputformat. Startprompts skal være på dansk.

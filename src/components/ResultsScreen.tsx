@@ -2,6 +2,7 @@ import { DiscoveryResponse } from '@/lib/types';
 import UseCaseCard from './UseCaseCard';
 import WontHelpSection from './WontHelpSection';
 import SendBriefCTA from './SendBriefCTA';
+import ResourcesSection from './ResourcesSection';
 
 type Props = {
   result: DiscoveryResponse;
@@ -44,6 +45,12 @@ export default function ResultsScreen({ result, userDescription, onReset }: Prop
               <UseCaseCard key={i} useCase={uc} />
             ))}
           </div>
+
+          {result.recommended_resources?.length > 0 && (
+            <div className="mb-10">
+              <ResourcesSection resources={result.recommended_resources} />
+            </div>
+          )}
 
           <div className="mb-10">
             <WontHelpSection items={result.wont_help} />
